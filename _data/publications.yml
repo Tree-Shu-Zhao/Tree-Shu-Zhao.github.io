@@ -1,0 +1,33 @@
+preprint:
+  - title: "Less is More: Toward Zero-Shot Local Scene Graph Generation via Foundation Models"
+    authors: <strong>Shu Zhao</strong>, Huijuan Xu
+    conference_short: arXiv
+    conference: "arXiv:2310.01356. 2023."
+    pdf: https://arxiv.org/pdf/2310.01356.pdf
+    image: ./assets/img/arXiv23_ELEGANT.png
+
+main:
+  - title: "NEUCORE: Neural Concept Reasoning for Composed Image Retrieval"
+    authors: <strong>Shu Zhao</strong>, Huijuan Xu
+    conference_short: NeurIPS Workshop
+    conference: "UniReps Workshop @ Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2023"
+    pdf: https://arxiv.org/pdf/2310.01358.pdf
+    image: ./assets/img/arXiv23_NEUCORE.png
+    
+  - title: "Rescuing Deep Hashing from Dead Bits Problem"
+    authors: <strong>Shu Zhao</strong>, Dayan Wu, Yucan Zhou, Bo Li, Weiping Wang
+    conference_short: IJCAI
+    conference: International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2021.
+    pdf: https://arxiv.org/pdf/2102.00648.pdf
+    #code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    #page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    image: ./assets/img/IJCAI21_RDH.png
+
+  - title: "Asymmetric Deep Hashing for Efficient Hash Code Compression"
+    authors: <strong>Shu Zhao</strong>, Dayan Wu, Wanqian Zhang, Yu Zhou, Bo Li, Weiping Wang
+    conference_short: ACM MM
+    conference: ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2020.
+    pdf: https://dl.acm.org/doi/pdf/10.1145/3394171.3414033
+    #code: https://github.com/MrGiovanni/ContinualLearning
+    image: ./assets/img/MM20_CCDH.png
+    notes: Oral Presentation
