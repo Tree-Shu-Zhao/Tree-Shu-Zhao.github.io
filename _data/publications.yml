@@ -20,6 +20,7 @@ main:
     conference: "UniReps Workshop @ Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2023"
     pdf: https://arxiv.org/pdf/2310.01358.pdf
     image: ./assets/img/arXiv23_NEUCORE.png
+    code: https://github.com/Tree-Shu-Zhao/NEUCORE.pytorch
     
   - title: "Rescuing Deep Hashing from Dead Bits Problem"
     authors: <strong>Shu Zhao</strong>, Dayan Wu, Yucan Zhou, Bo Li, Weiping Wang
