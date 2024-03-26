@@ -6,7 +6,7 @@ layout: homepage
 
 <span style="color:red">I am looking for a summer research internship, please email me if you have information about it!</span>
 
-I am a second-year Ph.D. student at Pennsylvania State University, advised by Prof. [Huijuan Xu](https://visionlanguagelab.github.io/). Previously, I received M.E. degree from University of Chinese Academy of Sciences and B.E. degree from Anhui University.
+I am a second-year Ph.D. student at Pennsylvania State University, advised by Prof. [Huijuan Xu](https://visionlanguagelab.github.io/). Previously, I received M.E. degree from University of Chinese Academy of Sciences, advised by Prof. [Bo Li](https://scholar.google.com/citations?user=6XzLzIQAAAAJ), and B.E. degree from Anhui University.
 
 I was fortunate to work with brilliant people: Dr.[Tan Yu](https://sites.google.com/site/tanyuspersonalwebsite/) at Baidu Research; Prof.[Dayan Wu](https://scholar.google.com/citations?user=O6g-IHsAAAAJ) at Institute of Information Engineering.
 
