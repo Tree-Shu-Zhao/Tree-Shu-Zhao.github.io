@@ -13,10 +13,9 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Vision & Language**
 
 ## News
-- **[Aug. 2024]** We submitted a paper about Low-Resouce Adaptation for Image Retrieval.
+- **[Dec. 2024]** Our paper, KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing, was accepted by AAAI 2025.
 - **[Aug. 2024]** We submitted a paper about Robustness of Autonomous Driving under Missing Views.
 - **[Aug. 2024]** We submitted a paper about Continual Missing Modality Learning.
-- **[Jul. 2024]** We submitted a paper about Multi-Sensor Fusion for Autonomous Driving.
 
 {% include_relative _includes/publications.md %}
 
