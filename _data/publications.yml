@@ -15,6 +15,13 @@ preprint:
     image: ./assets/img/arXiv23_ELEGANT.png
 
 main:
+  - title: "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing"
+    authors: <strong>Shu Zhao</strong>, Tan Yu, Xiaoshuai Hao, Wenchao Ma, Vijaykrishnan Narayanan
+    conference_short: AAAI
+    conference: "Association for the Advancement of Artificial Intelligence <strong>(AAAI)</strong>, 2025"
+    pdf: https://shuzhao.me/
+    image: ./assets/img/AAAI25_KALAHash.png
+    code: https://github.com/Tree-Shu-Zhao/lrh/tree/ano
   - title: "NEUCORE: Neural Concept Reasoning for Composed Image Retrieval"
     authors: <strong>Shu Zhao</strong>, Huijuan Xu
     conference_short: NeurIPS Workshop
