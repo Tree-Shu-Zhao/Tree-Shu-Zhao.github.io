@@ -13,7 +13,7 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Vision & Language**
 
 ## News
-- **[Dec. 2024]** Our paper, KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing, was accepted by AAAI 2025.
+- **[Dec. 2024]** Our paper, KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing, was accepted at AAAI 2025.
 - **[Aug. 2024]** We submitted a paper about Robustness of Autonomous Driving under Missing Views.
 - **[Aug. 2024]** We submitted a paper about Continual Missing Modality Learning.
 
