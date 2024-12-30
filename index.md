@@ -11,6 +11,7 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 ## Research Interests
 - **Multimodal Retrieval-Augmented Generation**
 - **Vision & Language**
+- **Long-Context Understanding**
 
 ## News
 - **[Dec. 2024]** Our paper, KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing, was accepted at AAAI 2025.
