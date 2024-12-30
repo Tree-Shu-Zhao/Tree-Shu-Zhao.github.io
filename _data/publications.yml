@@ -19,7 +19,7 @@ main:
     authors: <strong>Shu Zhao</strong>, Tan Yu, Xiaoshuai Hao, Wenchao Ma, Vijaykrishnan Narayanan
     conference_short: AAAI
     conference: "AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025"
-    pdf: https://shuzhao.me/
+    pdf: https://arxiv.org/pdf/2412.19417
     image: ./assets/img/AAAI25_KALAHash.png
     code: https://github.com/Tree-Shu-Zhao/KALAHash.pytorch
   - title: "NEUCORE: Neural Concept Reasoning for Composed Image Retrieval"
