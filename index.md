@@ -14,9 +14,9 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Long-Context Understanding**
 
 ## News
+- **[Feb. 2025]** Our paper, "MapFusion: A Novel BEV Feature Fusion Network for Multi-modal Map Construction", has been accepted for publication in Information Fusion.
 - **[Jan. 2025]** We submitted a paper about Multimodal Retrieval-Augmented Generation.
-- **[Dec. 2024]** Our paper, KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing, was accepted at AAAI 2025.
-- **[Aug. 2024]** We submitted a paper about Robustness of Autonomous Driving under Missing Views.
+- **[Dec. 2024]** Our paper, "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing", was accepted at AAAI 2025.
 
 {% include_relative _includes/publications.md %}
 
