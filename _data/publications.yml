@@ -11,7 +11,7 @@ preprint:
     conference_short: arXiv
     conference: "arXiv:2310.01356. 2023."
     pdf: https://arxiv.org/pdf/2310.01356.pdf
-    code: https://github.com/Tree-Shu-Zhao
+    #code: https://github.com/Tree-Shu-Zhao
     image: ./assets/img/arXiv23_ELEGANT.png
 
 main:
@@ -22,6 +22,12 @@ main:
     pdf: https://arxiv.org/pdf/2412.19417
     image: ./assets/img/AAAI25_KALAHash.png
     code: https://github.com/Tree-Shu-Zhao/KALAHash.pytorch
+  - title: "MapFusion: A Novel BEV Feature Fusion Network for Multi-modal Map Construction"
+    authors: Xiaoshuai Hao, Yunfeng Diao, Mengchuan Wei, Yifan Yang, Peng Hao, Rong Yin, Hui Zhang, Weiming Li, <strong>Shu Zhao</strong>, Yu Liu
+    conference_short: Information Fusion
+    conference: "Information Fusion, 2025"
+    pdf: https://arxiv.org/pdf/2502.04377
+    image: ./assets/img/InformationFusion25_MapFusion.jpg
   - title: "NEUCORE: Neural Concept Reasoning for Composed Image Retrieval"
     authors: <strong>Shu Zhao</strong>, Huijuan Xu
     conference_short: NeurIPS Workshop
@@ -35,7 +41,7 @@ main:
     conference_short: IJCAI
     conference: International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2021.
     pdf: https://arxiv.org/pdf/2102.00648.pdf
-    code: https://github.com/Tree-Shu-Zhao
+    #code: https://github.com/Tree-Shu-Zhao
     #page: https://class-il.mpi-inf.mpg.de/mnemonics/
     image: ./assets/img/IJCAI21_RDH.png
 
@@ -44,6 +50,6 @@ main:
     conference_short: ACM MM
     conference: ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2020.
     pdf: https://dl.acm.org/doi/pdf/10.1145/3394171.3414033
-    code: https://github.com/Tree-Shu-Zhao
+    #code: https://github.com/Tree-Shu-Zhao
     image: ./assets/img/MM20_CCDH.png
     notes: Oral Presentation
