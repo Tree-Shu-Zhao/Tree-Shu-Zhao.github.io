@@ -15,4 +15,4 @@
   <li><autocolor>Vision and Language, Graduate, Fall 2023</autocolor></li>
 </ul>
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=3HKVSTwOBOJkTSAj_u1U_oyl6srfzqZyd7ijSnEggso&cl=ffffff&w=260" style="width=100;height=50"></script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=3HKVSTwOBOJkTSAj_u1U_oyl6srfzqZyd7ijSnEggso&cl=ffffff&w=260" style="width=0;height=0"></script>
