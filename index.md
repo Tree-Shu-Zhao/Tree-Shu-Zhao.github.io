@@ -14,7 +14,6 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Long-Context Understanding**
 
 ## News
-- **[Mar. 2025]** I'll be interning at NVIDIA this summer. See you at Santa Clara!
 - **[Feb. 2025]** One paper was accepted at CVPR 2025.
 - **[Feb. 2025]** Our paper, "MapFusion: A Novel BEV Feature Fusion Network for Multi-modal Map Construction", has been accepted for publication in Information Fusion.
 - **[Dec. 2024]** Our paper, "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing", was accepted at AAAI 2025.
