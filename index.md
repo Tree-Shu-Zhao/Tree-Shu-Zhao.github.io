@@ -16,9 +16,9 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Long-Context Understanding**
 
 ## News
+- **[May 2025]** One paper was accepted at ICML 2025.
 - **[Mar. 2025]** I will be interning at NVIDIA this summer. See you in Santa Clara!
 - **[Feb. 2025]** One paper was accepted at CVPR 2025.
-- **[Feb. 2025]** Our paper, "MapFusion: A Novel BEV Feature Fusion Network for Multi-modal Map Construction", has been accepted for publication in Information Fusion.
 
 {% include_relative _includes/publications.md %}
 
