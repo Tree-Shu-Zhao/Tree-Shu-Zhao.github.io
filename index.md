@@ -11,9 +11,8 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 ***Seeking Fall 2025 internships!***
 
 ## Research Interests
-- **Multimodal Retrieval-Augmented Generation**
+- **Search Agent**
 - **Vision & Language**
-- **Long-Context Understanding**
 
 ## News
 - **[May 2025]** One paper was accepted at ICML 2025.
