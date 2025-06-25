@@ -1,4 +1,11 @@
 main:
+  - title: "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?"
+    authors: Yusen Zhang, Wenliang Zheng, Aashrith Madasu, Peng Shi, Ryo Kamoi, Hao Zhou, Zhuoyang Zou, <strong>Shu Zhao</strong>, Sarkar Snigdha Sarathi Das, Vipul Gupta, Xiaoxin Lu, Nan Zhang, Ranran Haoran Zhang, Avitej Iyer, Renze Lou, Wenpeng Yin, Rui Zhang
+    conference_short: ICCV
+    conference: "International Conference on Computer Vision <strong>(ICCV)</strong>, 2025"
+    pdf: https://arxiv.org/pdf/2504.18406
+    image: ./assets/img/ICCV25_HRSCENE.png
+    code: https://yszh8.github.io/hrscene/
   - title: "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing"
     authors: <strong>Shu Zhao</strong>, Tan Yu, Xiaoshuai Hao, Wenchao Ma, Vijaykrishnan Narayanan
     conference_short: AAAI
