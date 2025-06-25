@@ -15,9 +15,9 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Vision & Language**
 
 ## News
+- **[Jun 2025]** Our paper, "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?" was accepted at ICCV 25.
 - **[May 2025]** One paper was accepted at ICML 2025.
 - **[Mar. 2025]** I will be interning at NVIDIA this summer. See you in Santa Clara!
-- **[Feb. 2025]** One paper was accepted at CVPR 2025.
 
 {% include_relative _includes/publications.md %}
 
