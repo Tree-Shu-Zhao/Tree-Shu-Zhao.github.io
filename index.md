@@ -9,8 +9,8 @@ I am a Ph.D. student at Pennsylvania State University, advised by Prof. [Vijaykr
 I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google.com/site/tanyuspersonalwebsite/) at NVIDIA; Dr. [Xiaoshuai Hao](https://scholar.google.com/citations?user=ui0lvY4AAAAJ) at Beijing Academy of Artificial Intelligence; Dr. [Nilesh Ahuja](https://scholar.google.com/citations?user=y9njJHAAAAAJ) at Intel Labs; Prof. [Dayan Wu](https://scholar.google.com/citations?user=O6g-IHsAAAAJ) at Institute of Information Engineering, Chinese Academy of Sciences.
 
 ## Research Interests
-- **Search Agent**
-- **Vision & Language**
+- **Post-training for Search/Tool-Use Agents**
+- **Efficient and Robust Multimodal Models**
 
 ## News
 - **[Jun 2025]** Our paper, "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?" was accepted at ICCV 25.
