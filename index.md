@@ -10,7 +10,7 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 
 ## Research Interests
 - **Search/Tool-Use Agents**
-- **LLM Post-training**
+- **LLM Post-Training**
 - **Vision & Language**
 
 ## News
