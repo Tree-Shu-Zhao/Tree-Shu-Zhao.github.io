@@ -8,7 +8,7 @@ I am a Ph.D. student at Pennsylvania State University, advised by Prof. [Vijaykr
 
 I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google.com/site/tanyuspersonalwebsite/) at NVIDIA; Dr. [Xiaoshuai Hao](https://scholar.google.com/citations?user=ui0lvY4AAAAJ) at Beijing Academy of Artificial Intelligence; Dr. [Nilesh Ahuja](https://scholar.google.com/citations?user=y9njJHAAAAAJ) at Intel Labs; Prof. [Dayan Wu](https://scholar.google.com/citations?user=O6g-IHsAAAAJ) at Institute of Information Engineering, Chinese Academy of Sciences.
 
-<span style="color:red">"I am seeking a full-time Research Scientist or Machine Learning Engineer position. Please contact me if you have relevant opportunities!</span>
+<span style="color:red">I am seeking a full-time Research Scientist or Machine Learning Engineer position. Please contact me if you have relevant opportunities!</span>
 
 ## Research Interests
 - **Search/Tool-Use Agents**
