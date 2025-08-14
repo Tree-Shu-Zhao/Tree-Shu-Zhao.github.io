@@ -46,6 +46,13 @@ main:
     notes: Oral Presentation
 
 preprint:
+  - title: "ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning"
+    authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, Rama Akkiraju
+    conference_short: arXiv
+    conference: "arXiv:2508.09303. 2025."
+    pdf: https://arxiv.org/pdf/2508.09303.pdf
+    code: https://github.com/Tree-Shu-Zhao/ParallelSearch
+    image: ./assets/img/arXiv25_ParallelSearch.png
   - title: "Reconstruct before Query: Continual Missing Modality Learning with Decomposed Prompt Collaboration"
     authors: <strong>Shu Zhao</strong>, Xiaohan Zou, Tan Yu, Huijuan Xu
     conference_short: arXiv
