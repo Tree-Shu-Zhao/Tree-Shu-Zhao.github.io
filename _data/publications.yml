@@ -1,4 +1,18 @@
 main:
+  - title: "Beyond the limitation of a single query: Train your LLM for query expansion with Reinforcement Learning"
+    authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu
+    conference_short: arXiv
+    conference: "arXiv:2510.10009. 2025."
+    pdf: https://arxiv.org/pdf/2510.10009.pdf
+    code: https://github.com/Tree-Shu-Zhao/scout
+    image: ./assets/img/arXiv25_ExpandSearch.png
+  - title: "ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning"
+    authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, Rama Akkiraju
+    conference_short: arXiv
+    conference: "arXiv:2508.09303. 2025."
+    pdf: https://arxiv.org/pdf/2508.09303.pdf
+    code: https://github.com/Tree-Shu-Zhao/scout
+    image: ./assets/img/arXiv25_ParallelSearch.png
   - title: "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?"
     authors: Yusen Zhang, Wenliang Zheng, Aashrith Madasu, Peng Shi, Ryo Kamoi, Hao Zhou, Zhuoyang Zou, <strong>Shu Zhao</strong>, Sarkar Snigdha Sarathi Das, Vipul Gupta, Xiaoxin Lu, Nan Zhang, Ranran Haoran Zhang, Avitej Iyer, Renze Lou, Wenpeng Yin, Rui Zhang
     conference_short: ICCV
@@ -19,6 +33,13 @@ main:
     conference: "Information Fusion, 2025"
     pdf: https://arxiv.org/pdf/2502.04377
     image: ./assets/img/InformationFusion25_MapFusion.jpg
+  - title: "Reconstruct before Query: Continual Missing Modality Learning with Decomposed Prompt Collaboration"
+    authors: <strong>Shu Zhao</strong>, Xiaohan Zou, Tan Yu, Huijuan Xu
+    conference_short: arXiv
+    conference: "arXiv:2403.11373. 2024."
+    pdf: https://arxiv.org/pdf/2403.11373.pdf
+    code: https://github.com/Tree-Shu-Zhao/RebQ.pytorch
+    image: ./assets/img/arXiv24_RebQ.png
   - title: "NEUCORE: Neural Concept Reasoning for Composed Image Retrieval"
     authors: <strong>Shu Zhao</strong>, Huijuan Xu
     conference_short: NeurIPS Workshop
@@ -26,7 +47,13 @@ main:
     pdf: https://arxiv.org/pdf/2310.01358.pdf
     image: ./assets/img/arXiv23_NEUCORE.png
     code: https://github.com/Tree-Shu-Zhao/NEUCORE.pytorch
-    
+  - title: "Less is More: Toward Zero-Shot Local Scene Graph Generation via Foundation Models"
+    authors: <strong>Shu Zhao</strong>, Huijuan Xu
+    conference_short: arXiv
+    conference: "arXiv:2310.01356. 2023."
+    pdf: https://arxiv.org/pdf/2310.01356.pdf
+    #code: https://github.com/Tree-Shu-Zhao
+    image: ./assets/img/arXiv23_ELEGANT.png
   - title: "Rescuing Deep Hashing from Dead Bits Problem"
     authors: <strong>Shu Zhao</strong>, Dayan Wu, Yucan Zhou, Bo Li, Weiping Wang
     conference_short: IJCAI
@@ -35,7 +62,6 @@ main:
     #code: https://github.com/Tree-Shu-Zhao
     #page: https://class-il.mpi-inf.mpg.de/mnemonics/
     image: ./assets/img/IJCAI21_RDH.png
-
   - title: "Asymmetric Deep Hashing for Efficient Hash Code Compression"
     authors: <strong>Shu Zhao</strong>, Dayan Wu, Wanqian Zhang, Yu Zhou, Bo Li, Weiping Wang
     conference_short: ACM MM
@@ -44,26 +70,3 @@ main:
     #code: https://github.com/Tree-Shu-Zhao
     image: ./assets/img/MM20_CCDH.png
     notes: Oral Presentation
-
-preprint:
-  - title: "ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning"
-    authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, Rama Akkiraju
-    conference_short: arXiv
-    conference: "arXiv:2508.09303. 2025."
-    pdf: https://arxiv.org/pdf/2508.09303.pdf
-    code: https://github.com/Tree-Shu-Zhao/ParallelSearch
-    image: ./assets/img/arXiv25_ParallelSearch.png
-  - title: "Reconstruct before Query: Continual Missing Modality Learning with Decomposed Prompt Collaboration"
-    authors: <strong>Shu Zhao</strong>, Xiaohan Zou, Tan Yu, Huijuan Xu
-    conference_short: arXiv
-    conference: "arXiv:2403.11373. 2024."
-    pdf: https://arxiv.org/pdf/2403.11373.pdf
-    code: https://github.com/Tree-Shu-Zhao/RebQ.pytorch
-    image: ./assets/img/arXiv24_RebQ.png
-  - title: "Less is More: Toward Zero-Shot Local Scene Graph Generation via Foundation Models"
-    authors: <strong>Shu Zhao</strong>, Huijuan Xu
-    conference_short: arXiv
-    conference: "arXiv:2310.01356. 2023."
-    pdf: https://arxiv.org/pdf/2310.01356.pdf
-    #code: https://github.com/Tree-Shu-Zhao
-    image: ./assets/img/arXiv23_ELEGANT.png
