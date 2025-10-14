@@ -21,7 +21,7 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **[May 2025]** One paper was accepted at ICML 2025.
 <details><summary> more... </summary>
 <ul>
-  <li>**[Mar. 2025]** I will be interning at NVIDIA this summer. See you in Santa Clara!</li>
+  <li>[Mar. 2025] I will be interning at NVIDIA this summer. See you in Santa Clara!</li>
 </ul>   
 </details>
 
