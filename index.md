@@ -16,7 +16,8 @@ I was fortunate to work with brilliant people: Dr. [Tan Yu](https://sites.google
 - **Vision & Language**
 
 ## News
-- **[Oct. 2025]** We have released [scout](https://github.com/Tree-Shu-Zhao/scout), an extensible RL framework for training LLM agents with advanced search capabilities. [ParallelSearch](https://shuzhao.me/ParallelSearchProject/), [ExpandSearch](https://shuzhao.me/ExpandSearchProject/), and [Search-R1](https://arxiv.org/abs/2505.15117) recipes are fully open-sourced.
+- **[Oct. 18 2025]** We have to withdraw the scout repository :(. Hope we can reopen it soon.
+- **[Oct. 2025]** ~~We have released scout, an extensible RL framework for training LLM agents with advanced search capabilities.
 - **[Jun. 2025]** Our paper, "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?" was accepted at ICCV 25.
 - **[May 2025]** One paper was accepted at ICML 2025.
 <details><summary> more... </summary>
