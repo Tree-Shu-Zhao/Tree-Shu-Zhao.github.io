@@ -4,14 +4,14 @@ main:
     conference_short: arXiv
     conference: "arXiv:2510.10009. 2025."
     pdf: https://arxiv.org/pdf/2510.10009.pdf
-    code: https://github.com/Tree-Shu-Zhao/scout
+    code: https://shuzhao.me/ExpandSearchProject
     image: ./assets/img/arXiv25_ExpandSearch.png
   - title: "ParallelSearch: Train your LLMs to Decompose Query and Search Sub-queries in Parallel with Reinforcement Learning"
     authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, Rama Akkiraju
     conference_short: arXiv
     conference: "arXiv:2508.09303. 2025."
     pdf: https://arxiv.org/pdf/2508.09303.pdf
-    code: https://github.com/Tree-Shu-Zhao/scout
+    code: https://shuzhao.me/ParallelSearchProject
     image: ./assets/img/arXiv25_ParallelSearch.png
   - title: "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?"
     authors: Yusen Zhang, Wenliang Zheng, Aashrith Madasu, Peng Shi, Ryo Kamoi, Hao Zhou, Zhuoyang Zou, <strong>Shu Zhao</strong>, Sarkar Snigdha Sarathi Das, Vipul Gupta, Xiaoxin Lu, Nan Zhang, Ranran Haoran Zhang, Avitej Iyer, Renze Lou, Wenpeng Yin, Rui Zhang
