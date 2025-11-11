@@ -1,4 +1,11 @@
 main:
+  - title: "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition"
+    authors: <strong>Shu Zhao</strong>, Nilesh Ahuja, Tan Yu, Tianyi Shen, Vijaykrishnan Narayanan
+    conference_short: arXiv
+    conference: "arXiv:2511.06225. 2025."
+    pdf: https://arxiv.org/pdf/2511.06225.pdf
+    code: https://github.com/Tree-Shu-Zhao/MoRA
+    image: ./assets/img/arXiv25_MoRA.png
   - title: "Beyond the limitation of a single query: Train your LLM for query expansion with Reinforcement Learning"
     authors: <strong>Shu Zhao</strong>, Tan Yu, Anbang Xu
     conference_short: arXiv
