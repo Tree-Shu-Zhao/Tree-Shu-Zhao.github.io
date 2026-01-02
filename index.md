@@ -17,8 +17,8 @@ I will be joining NVIDIA as a Senior Machine Learning Engineer. I completed my P
 - **[Jun. 2025]** Our paper, "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?" was accepted at ICCV 25.
 <details><summary> more... </summary>
 <ul>
-  <li>**[May 2025]** One paper was accepted at ICML 2025.</li>
-  <li>**[Mar. 2025]** I will be interning at NVIDIA this summer. See you in Santa Clara!</li>
+  <li>[May 2025] One paper was accepted at ICML 2025.</li>
+  <li>[Mar. 2025] I will be interning at NVIDIA this summer. See you in Santa Clara!</li>
 </ul>   
 </details>
 
