@@ -3,8 +3,10 @@
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
-  <li><a href="https://iccv.thecvf.com/"><autocolor>International Conference on Computer Vision (ICCV)</autocolor></a></li>
   <li><a href="https://cvpr.thecvf.com/"><autocolor>Computer Vision and Pattern Recognition (CVPR)</autocolor></a></li>
+  <li><a href="https://iccv.thecvf.com/"><autocolor>International Conference on Computer Vision (ICCV)</autocolor></a></li>
+  <li><a href="https://eccv.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV)</autocolor></a></li>
+  <li><a href="https://iclr.cc/"><autocolor>International Conference on Learning Representations (ICLR)</autocolor></a></li>
   <li><a href="https://neurips.cc/"><autocolor>Annual Conference on Neural Information Processing Systems (NeurIPS)</autocolor></a></li>
   <li><a href="https://dl.acm.org/conference/mm"><autocolor>ACM International Conference on Multimedia (ACM MM)</autocolor></a></li>
 </ul>
