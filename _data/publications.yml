@@ -2,7 +2,7 @@ main:
   - title: "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition"
     authors: <strong>Shu Zhao</strong>, Nilesh Ahuja, Tan Yu, Tianyi Shen, Vijaykrishnan Narayanan
     conference_short: ICLR
-    conference: "International Conference on Learning Representations"
+    conference: "International Conference on Learning Representations <strong>(ICLR)</strong>, 2026"
     pdf: https://arxiv.org/pdf/2511.06225.pdf
     code: https://github.com/Tree-Shu-Zhao/MoRA
     image: ./assets/img/arXiv25_MoRA.png
