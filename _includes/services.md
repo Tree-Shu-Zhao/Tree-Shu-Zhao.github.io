@@ -8,6 +8,7 @@
   <li><a href="https://eccv.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV)</autocolor></a></li>
   <li><a href="https://iclr.cc/"><autocolor>International Conference on Learning Representations (ICLR)</autocolor></a></li>
   <li><a href="https://neurips.cc/"><autocolor>Annual Conference on Neural Information Processing Systems (NeurIPS)</autocolor></a></li>
+  <li><a href="https://icml.cc/"><autocolor>International Conference on Machine Learning (ICML)</autocolor></a></li>
   <li><a href="https://dl.acm.org/conference/mm"><autocolor>ACM International Conference on Multimedia (ACM MM)</autocolor></a></li>
 </ul>
 
