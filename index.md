@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I will be joining NVIDIA as a Senior Machine Learning Engineer. I completed my Ph.D. at Pennsylvania State University, advised by Prof. [Vijaykrishnan Narayanan](https://sites.psu.edu/vijaykrishnannarayanan/).
+I am a Senior Machine Learning Engineer at NVIDIA. I completed my Ph.D. at Pennsylvania State University, advised by Prof. [Vijaykrishnan Narayanan](https://sites.psu.edu/vijaykrishnannarayanan/).
 
 ## Research Interests
 - **Search/Tool-Use Agents**
