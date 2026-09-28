@@ -1,4 +1,12 @@
 main:
+  - title: "The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors"
+    authors: <strong>Shu Zhao</strong>, Tan Yu
+    conference_short: NeurIPS
+    conference: "Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026"
+    pdf: https://openreview.net/forum?id=dVu1u4QgAp
+    code: https://openreview.net/forum?id=dVu1u4QgAp
+    image: ./assets/img/NeurIPS26_SMILE.png
+    notes: Spotlight
   - title: "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition"
     authors: <strong>Shu Zhao</strong>, Nilesh Ahuja, Tan Yu, Tianyi Shen, Vijaykrishnan Narayanan
     conference_short: ICLR
@@ -13,13 +21,6 @@ main:
     pdf: https://arxiv.org/pdf/2508.09303.pdf
     code: https://shuzhao.me/ParallelSearchProject
     image: ./assets/img/arXiv25_ParallelSearch.png
-  - title: "HRScene: How Far Are VLMs from Effective High-Resolution Image Understanding?"
-    authors: Yusen Zhang, Wenliang Zheng, Aashrith Madasu, Peng Shi, Ryo Kamoi, Hao Zhou, Zhuoyang Zou, <strong>Shu Zhao</strong>, Sarkar Snigdha Sarathi Das, Vipul Gupta, Xiaoxin Lu, Nan Zhang, Ranran Haoran Zhang, Avitej Iyer, Renze Lou, Wenpeng Yin, Rui Zhang
-    conference_short: ICCV
-    conference: "International Conference on Computer Vision <strong>(ICCV)</strong>, 2025"
-    pdf: https://arxiv.org/pdf/2504.18406
-    image: ./assets/img/ICCV25_HRSCENE.png
-    code: https://yszh8.github.io/hrscene/
   - title: "KALAHash: Knowledge-Anchored Low-Resource Adaptation for Deep Hashing"
     authors: <strong>Shu Zhao</strong>, Tan Yu, Xiaoshuai Hao, Wenchao Ma, Vijaykrishnan Narayanan
     conference_short: AAAI
