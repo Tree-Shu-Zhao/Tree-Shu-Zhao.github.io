@@ -52,8 +52,8 @@ main:
   - title: "Asymmetric Deep Hashing for Efficient Hash Code Compression"
     authors: <strong>Shu Zhao</strong>, Dayan Wu, Wanqian Zhang, Yu Zhou, Bo Li, Weiping Wang
     conference_short: ACM MM
-    conference: ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2020.
+    conference: ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2020
     pdf: https://dl.acm.org/doi/pdf/10.1145/3394171.3414033
     #code: https://github.com/Tree-Shu-Zhao
     image: ./assets/img/MM20_CCDH.png
-    notes: Oral Presentation
+    notes: Oral
