@@ -4,7 +4,7 @@ main:
     conference_short: NeurIPS
     conference: "Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026"
     pdf: https://openreview.net/forum?id=dVu1u4QgAp
-    code: https://openreview.net/forum?id=dVu1u4QgAp
+    page: https://tree-shu-zhao.github.io/SMILE/
     image: ./assets/img/NeurIPS26_SMILE.png
     notes: Spotlight
   - title: "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition"
