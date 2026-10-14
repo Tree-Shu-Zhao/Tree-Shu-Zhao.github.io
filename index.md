@@ -12,7 +12,7 @@ I am a Senior Machine Learning Engineer at NVIDIA. I completed my Ph.D. at Penns
 - **Vision & Language**
 
 ## News
-- **[Sep. 2026]** Our paper, "[The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors](https://arxiv.org/abs/2610.16977)," was accepted at NeurIPS 26 as a **Spotlight**.
+- **[Sep. 2026]** Our paper, "The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors," was accepted at NeurIPS 26 as a **Spotlight**.
 - **[Jan. 2026]** Our paper, "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition," was accepted at ICLR 26.
 - **[Dec. 2025]** Successfully defended my Ph.D. dissertation!
 <details><summary> more... </summary>
