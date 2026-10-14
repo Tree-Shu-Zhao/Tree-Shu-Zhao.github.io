@@ -3,7 +3,7 @@ main:
     authors: <strong>Shu Zhao</strong>, Tan Yu
     conference_short: NeurIPS
     conference: "Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026"
-    pdf: https://openreview.net/forum?id=dVu1u4QgAp
+    pdf: https://arxiv.org/pdf/2610.16977
     code: https://tree-shu-zhao.github.io/SMILE/
     image: ./assets/img/NeurIPS26_SMILE.png
     notes: Spotlight
