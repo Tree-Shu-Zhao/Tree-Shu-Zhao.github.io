@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation</title>
+  <meta name="description" content="R2S repairs the teacher that scores agentic on-policy distillation, without task reward: it fine-tunes the teacher to give the scores it would give with one of its own finishing takeovers in context.">
+  <meta name="keywords" content="R2S, rollout-to-scorer distillation, agentic on-policy distillation, teacher repair, LLM agents, ALFWorld, WebShop, ScienceWorld">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation">
+  <meta property="og:description" content="R2S repairs the teacher that scores agentic on-policy distillation, without task reward: it fine-tunes the teacher to give the scores it would give with one of its own finishing takeovers in context.">
+  <meta property="og:url" content="https://shuzhao.me/r2s/">
+  <meta property="og:image" content="https://shuzhao.me/r2s/static/images/og_card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation">
+  <meta name="twitter:description" content="R2S repairs the teacher that scores agentic on-policy distillation, without task reward: it fine-tunes the teacher to give the scores it would give with one of its own finishing takeovers in context.">
+  <meta name="twitter:image" content="https://shuzhao.me/r2s/static/images/og_card.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;600;700&amp;family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/r2s.css">
+</head>
+<body>
+<!-- Icons: Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0) -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span class="title-line">Capable Teacher, Myopic Scorer:</span> <span class="title-line"><span class="nowrap">Reward-Free</span> Teacher Repair for Agentic <span class="nowrap">On-Policy</span> Distillation</span></h1>
+          <div class="venue">Preprint <span class="venue-tag">2026</span></div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://shuzhao.me/" target="_blank">Shu Zhao</a>,</span>
+            <span class="author-block">Tan Yu</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">NVIDIA</span>
+          </div>
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="static/pdf/r2s.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 384 512"><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/Tree-Shu-Zhao/miles-agent/tree/r2s" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                <span>Code</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/collections/TreezzZ/r2s-rollout-to-scorer-distillation-6ad750cab4aa1226dec0a305" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">🤗</span>
+                <span>Models</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path fill="currentColor" d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></span>
+                <span>BibTeX</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <a href="static/images/teaser.jpg" target="_blank"><img src="static/images/teaser.jpg" alt="(a) The teacher's token scores let the student's delaying thoughts pass and the episode runs out of turns, while the teacher's own takeover from the same state completes the task. (b) R2S: with a selected takeover in context the teacher scores the delay lower; a copy is fine-tuned offline to do so without the takeover and becomes the OPD scorer." class="figure-img"></a>
+      <p class="figure-caption"><b>OPD can reinforce the delays its teacher lets pass.</b> (a) The teacher's scores let delaying thoughts pass and the episode runs out of turns; its own takeover from that state finishes. (b) With the takeover in context, the teacher scores the delay lower; R2S trains a copy to do so without it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Agentic on-policy distillation (OPD) trains a student agent on its own trajectories while a teacher scores every token. A natural explanation of where it goes wrong is compounding error: the student's mistakes carry its trajectories beyond the region where the teacher is reliable, so recent methods keep training inside that region, through episode-length curricula, teacher-guided turns, prefix replay, or teacher intervention where the two disagree. We show this explanation is incomplete. From the states where the student departs most from the teacher, the teacher's own takeovers still finish the task, yet the student trained on its token scores keeps running out of turns. We attribute this to the myopia of next-token scoring. The teacher rates each token without seeing where the episode ends, so its scores let through the safe, delaying moves that outcome-based RL would punish with zero reward, a penalty agentic OPD lacks. We call this difference between what the teacher does and what it scores the <em>rollout&ndash;scorer gap</em>. We propose <b>Rollout-to-Scorer Distillation</b> (<b>R2S</b>), which repairs the scorer before distillation by mining high-disagreement states from the untrained student, running teacher takeovers from them, keeping the states where enough takeovers pass a reward-free check such as consensus or an LLM judge, and fine-tuning the teacher to give its takeover-informed scores on every assistant token from the divergence turn onward, without the takeover in context. The repaired teacher is frozen as the sole scorer for standard OPD, requiring no task reward during repair or training. Across three environments, two teachers and four students, R2S outperforms three state-of-the-art agentic-OPD methods in all twelve teacher&ndash;student&ndash;environment cells, by 12.8 success points on average over the best of them in each cell.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <a href="static/images/method.jpg" target="_blank"><img src="static/images/method.jpg" alt="R2S pipeline. Left: the untrained student plays the environment; at a selected high-disagreement state the teacher takes over several times and a reward-free check selects one takeover. Middle: with the selected takeover in context, the frozen teacher scores the student's original thinking and action tokens from the divergence turn onward, giving the q+ targets. Right: a copy of the teacher is fine-tuned offline to produce these targets without the takeover and becomes the sole scorer of ordinary OPD." class="figure-img"></a>
+    <p class="figure-caption"><b>R2S repairs the teacher's scores on the full assistant suffix before ordinary OPD.</b> With a selected takeover from the untrained student's state in context, the frozen teacher <i>T</i><sub>0</sub> scores the student's thinking and actions from the divergence turn onward (<i>q</i><sup>+</sup>). A copy learns these targets without the takeover and becomes the sole OPD scorer.</p>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+    <p class="figure-caption caption-above"><b>R2S versus vanilla OPD, TCOD-F2B, Guided-OPD and FutureBridge.</b> Success (%) of one training run per cell, mean &plusmn; std over three decodes of its final checkpoint. The <span class="legend best">best</span> and <span class="legend second">second best</span> of the five trained students in each column are highlighted; the teacher acting alone and the untrained student are anchors.</p>
+    <div class="table-container">
+<table class="table results">
+<thead>
+<tr><th scope="col">Method</th><th colspan="2" scope="colgroup">ALFWorld</th><th colspan="2" scope="colgroup">WebShop</th><th colspan="2" scope="colgroup">ScienceWorld</th></tr>
+</thead>
+<tbody>
+<tr class="panel"><th colspan="7" scope="rowgroup">Qwen3.5-9B teaches Qwen3.5-2B and Qwen3.5-4B</th></tr>
+<tr class="sub"><th class="method" scope="col"></th><th scope="col">2B</th><th scope="col">4B</th><th scope="col">2B</th><th scope="col">4B</th><th scope="col">2B</th><th scope="col">4B</th></tr>
+<tr class="anchor"><td class="method">Teacher alone</td><td colspan="2">63.1<span class="pm">&plusmn;1.7</span></td><td colspan="2">33.5<span class="pm">&plusmn;0.3</span></td><td colspan="2">32.0<span class="pm">&plusmn;1.8</span></td></tr>
+<tr class="anchor"><td class="method">Student alone</td><td>15.1<span class="pm">&plusmn;1.8</span></td><td>43.4<span class="pm">&plusmn;1.0</span></td><td>17.6<span class="pm">&plusmn;1.1</span></td><td>33.7<span class="pm">&plusmn;0.9</span></td><td>3.1<span class="pm">&plusmn;0.4</span></td><td>28.0<span class="pm">&plusmn;1.5</span></td></tr>
+<tr><td class="method">Vanilla OPD</td><td>58.0<span class="pm">&plusmn;2.4</span></td><td class="second">65.8<span class="pm">&plusmn;2.6</span></td><td>35.7<span class="pm">&plusmn;1.6</span></td><td>34.6<span class="pm">&plusmn;2.9</span></td><td>23.7<span class="pm">&plusmn;2.0</span></td><td class="second">34.6<span class="pm">&plusmn;3.5</span></td></tr>
+<tr><td class="method">TCOD-F2B</td><td>62.7<span class="pm">&plusmn;2.0</span></td><td>59.6<span class="pm">&plusmn;1.5</span></td><td>33.1<span class="pm">&plusmn;0.5</span></td><td>35.1<span class="pm">&plusmn;0.9</span></td><td class="second">28.0<span class="pm">&plusmn;2.6</span></td><td>30.6<span class="pm">&plusmn;0.7</span></td></tr>
+<tr><td class="method">Guided-OPD</td><td class="second">63.6<span class="pm">&plusmn;2.2</span></td><td>61.6<span class="pm">&plusmn;2.0</span></td><td>35.6<span class="pm">&plusmn;0.6</span></td><td class="second">35.5<span class="pm">&plusmn;1.3</span></td><td>25.9<span class="pm">&plusmn;3.7</span></td><td>32.2<span class="pm">&plusmn;1.1</span></td></tr>
+<tr><td class="method">FutureBridge</td><td>56.8<span class="pm">&plusmn;2.8</span></td><td>58.4<span class="pm">&plusmn;3.7</span></td><td class="second">36.3<span class="pm">&plusmn;1.0</span></td><td>33.9<span class="pm">&plusmn;1.7</span></td><td>19.0<span class="pm">&plusmn;2.0</span></td><td>30.7<span class="pm">&plusmn;1.3</span></td></tr>
+<tr class="ours"><td class="method">R2S (ours)</td><td class="best">77.9<span class="pm">&plusmn;1.3</span></td><td class="best">81.9<span class="pm">&plusmn;2.4</span></td><td class="best">57.9<span class="pm">&plusmn;1.6</span></td><td class="best">55.9<span class="pm">&plusmn;1.4</span></td><td class="best">37.9<span class="pm">&plusmn;0.6</span></td><td class="best">47.8<span class="pm">&plusmn;3.0</span></td></tr>
+</tbody>
+<tbody>
+<tr class="panel"><th colspan="7" scope="rowgroup">Qwen3-30B-A3B-Instruct-2507 teaches Qwen3-4B and Qwen3-8B</th></tr>
+<tr class="sub"><th class="method" scope="col"></th><th scope="col">4B</th><th scope="col">8B</th><th scope="col">4B</th><th scope="col">8B</th><th scope="col">4B</th><th scope="col">8B</th></tr>
+<tr class="anchor"><td class="method">Teacher alone</td><td colspan="2">42.3<span class="pm">&plusmn;1.1</span></td><td colspan="2">2.9<span class="pm">&plusmn;0.3</span></td><td colspan="2">32.9<span class="pm">&plusmn;3.2</span></td></tr>
+<tr class="anchor"><td class="method">Student alone</td><td>30.4<span class="pm">&plusmn;2.3</span></td><td>46.9<span class="pm">&plusmn;0.8</span></td><td>15.5<span class="pm">&plusmn;1.2</span></td><td>23.6<span class="pm">&plusmn;1.2</span></td><td>9.0<span class="pm">&plusmn;1.4</span></td><td>24.0<span class="pm">&plusmn;3.9</span></td></tr>
+<tr><td class="method">Vanilla OPD</td><td>41.2<span class="pm">&plusmn;1.7</span></td><td>44.5<span class="pm">&plusmn;2.6</span></td><td class="second">24.7<span class="pm">&plusmn;1.1</span></td><td>20.3<span class="pm">&plusmn;0.9</span></td><td>38.0<span class="pm">&plusmn;1.2</span></td><td>36.8<span class="pm">&plusmn;1.0</span></td></tr>
+<tr><td class="method">TCOD-F2B</td><td class="second">42.6<span class="pm">&plusmn;1.1</span></td><td class="second">48.8<span class="pm">&plusmn;1.8</span></td><td>22.8<span class="pm">&plusmn;0.7</span></td><td class="second">23.4<span class="pm">&plusmn;0.7</span></td><td class="second">38.4<span class="pm">&plusmn;0.9</span></td><td>34.9<span class="pm">&plusmn;0.5</span></td></tr>
+<tr><td class="method">Guided-OPD</td><td>42.0<span class="pm">&plusmn;0.4</span></td><td>47.0<span class="pm">&plusmn;1.9</span></td><td>23.3<span class="pm">&plusmn;1.6</span></td><td>22.3<span class="pm">&plusmn;0.8</span></td><td>34.7<span class="pm">&plusmn;1.8</span></td><td>33.0<span class="pm">&plusmn;1.5</span></td></tr>
+<tr><td class="method">FutureBridge</td><td>41.8<span class="pm">&plusmn;2.6</span></td><td>45.9<span class="pm">&plusmn;1.1</span></td><td>16.7<span class="pm">&plusmn;0.9</span></td><td>20.7<span class="pm">&plusmn;0.7</span></td><td>36.1<span class="pm">&plusmn;1.5</span></td><td class="second">37.1<span class="pm">&plusmn;2.0</span></td></tr>
+<tr class="ours"><td class="method">R2S (ours)</td><td class="best">54.5<span class="pm">&plusmn;1.4</span></td><td class="best">54.7<span class="pm">&plusmn;1.0</span></td><td class="best">28.5<span class="pm">&plusmn;0.6</span></td><td class="best">30.4<span class="pm">&plusmn;1.2</span></td><td class="best">45.8<span class="pm">&plusmn;1.4</span></td><td class="best">50.5<span class="pm">&plusmn;1.4</span></td></tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Training Dynamics</h2>
+    <a href="static/images/curves.png" target="_blank"><img src="static/images/curves.png" alt="Success over 150 training steps on ALFWorld, WebShop and ScienceWorld for vanilla OPD, TCOD-F2B, Guided-OPD, FutureBridge and R2S, with bands over three training runs; the R2S curve lies above every baseline from early in training, and above the dashed teacher-alone line." class="figure-img narrow"></a>
+    <p class="figure-caption"><b>R2S students separate from every baseline during training.</b> Qwen3.5-9B teaches Qwen3.5-4B; mean &plusmn; one standard deviation over three training runs; dashed: the teacher acting alone.</p>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">What the Repair Changes</h2>
+    <a href="static/images/scorer_effect.png" target="_blank"><img src="static/images/scorer_effect.png" alt="Left: KL from each teacher's top-16 scores to the takeover-informed targets on held-out states; the repaired teacher is closer in all three environments. Right: share of held-out episodes that run out of turns; the R2S student runs out of turns about half as often as the vanilla OPD student." class="figure-img narrow"></a>
+    <p class="figure-caption"><b>Repair moves the teacher toward its informed targets, and its student runs out of turns about half as often.</b> Left: each teacher's top-16 KL to <i>q</i><sup>+</sup> on held-out states, with 95% goal-bootstrap intervals. Right: held-out episodes that end unfinished at the turn budget, mean &plusmn; std over three decodes.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Released Checkpoints</h2>
+    <p class="figure-caption caption-above"><b>The 24 checkpoints of the main table</b>, on the Hugging Face Hub as bf16 safetensors. The repaired teacher of a pair is the sole scorer that distilled that pair's student; the student is the final checkpoint of its 150-step run. The "Teacher alone" row of the table is the unrepaired base teacher.</p>
+    <div class="table-container">
+<table class="table checkpoints">
+<thead>
+<tr><th scope="col">Environment</th><th scope="col">Teacher &rarr; student</th><th scope="col">Repaired teacher</th><th scope="col">Distilled student</th></tr>
+</thead>
+<tbody>
+<tr><td class="env" rowspan="4">ALFWorld</td><td>Qwen3.5-9B &rarr; Qwen3.5-2B</td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3.5-9b-teacher-for-qwen3.5-2b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-2b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3.5-2b-student" target="_blank">🤗 <code>qwen3.5-2b-student</code></a></td></tr>
+<tr><td>Qwen3.5-9B &rarr; Qwen3.5-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3.5-9b-teacher-for-qwen3.5-4b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3.5-4b-student" target="_blank">🤗 <code>qwen3.5-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3-30b-a3b-teacher-for-qwen3-4b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3-4b-student" target="_blank">🤗 <code>qwen3-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-8B</td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3-30b-a3b-teacher-for-qwen3-8b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-8b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-alfworld-qwen3-8b-student" target="_blank">🤗 <code>qwen3-8b-student</code></a></td></tr>
+</tbody>
+<tbody>
+<tr><td class="env" rowspan="4">WebShop</td><td>Qwen3.5-9B &rarr; Qwen3.5-2B</td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3.5-9b-teacher-for-qwen3.5-2b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-2b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3.5-2b-student" target="_blank">🤗 <code>qwen3.5-2b-student</code></a></td></tr>
+<tr><td>Qwen3.5-9B &rarr; Qwen3.5-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3.5-9b-teacher-for-qwen3.5-4b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3.5-4b-student" target="_blank">🤗 <code>qwen3.5-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3-30b-a3b-teacher-for-qwen3-4b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3-4b-student" target="_blank">🤗 <code>qwen3-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-8B</td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3-30b-a3b-teacher-for-qwen3-8b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-8b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-webshop-qwen3-8b-student" target="_blank">🤗 <code>qwen3-8b-student</code></a></td></tr>
+</tbody>
+<tbody>
+<tr><td class="env" rowspan="4">ScienceWorld</td><td>Qwen3.5-9B &rarr; Qwen3.5-2B</td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3.5-9b-teacher-for-qwen3.5-2b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-2b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3.5-2b-student" target="_blank">🤗 <code>qwen3.5-2b-student</code></a></td></tr>
+<tr><td>Qwen3.5-9B &rarr; Qwen3.5-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3.5-9b-teacher-for-qwen3.5-4b" target="_blank">🤗 <code>qwen3.5-9b-teacher-for-qwen3.5-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3.5-4b-student" target="_blank">🤗 <code>qwen3.5-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-4B</td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3-30b-a3b-teacher-for-qwen3-4b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-4b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3-4b-student" target="_blank">🤗 <code>qwen3-4b-student</code></a></td></tr>
+<tr><td>Qwen3-30B-A3B &rarr; Qwen3-8B</td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3-30b-a3b-teacher-for-qwen3-8b" target="_blank">🤗 <code>qwen3-30b-a3b-teacher-for-qwen3-8b</code></a></td><td><a href="https://huggingface.co/TreezzZ/r2s-scienceworld-qwen3-8b-student" target="_blank">🤗 <code>qwen3-8b-student</code></a></td></tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Code and Models</h2>
+    <div class="columns">
+      <div class="column">
+        <a class="box resource" href="https://github.com/Tree-Shu-Zhao/miles-agent/tree/r2s" target="_blank">
+          <p class="resource-title"><span class="icon"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span> Code</p>
+          <p>The repair pipeline, the teacher fine-tune and the student arm on the miles trainer and NeMo Gym environments, frozen at the tag <code>r2s</code> of miles-agent.</p>
+        </a>
+      </div>
+      <div class="column">
+        <a class="box resource" href="https://huggingface.co/collections/TreezzZ/r2s-rollout-to-scorer-distillation-6ad750cab4aa1226dec0a305" target="_blank">
+          <p class="resource-title"><span class="icon">🤗</span> Models</p>
+          <p>The repaired teacher and the distilled student of every cell of the main table, 24 checkpoints in one Hugging Face collection.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@article{zhao2026capable,
+  title={Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation},
+  author={Zhao, Shu and Yu, Tan},
+  journal={arXiv preprint},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
