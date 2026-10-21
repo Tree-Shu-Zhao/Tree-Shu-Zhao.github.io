@@ -4,8 +4,7 @@ main:
     conference_short: arXiv
     conference: "arXiv:2610.28586. 2026."
     pdf: https://arxiv.org/pdf/2610.28586
-    code: https://github.com/Tree-Shu-Zhao/miles-agent/tree/r2s
-    page: https://shuzhao.me/r2s/
+    code: https://shuzhao.me/r2s/
     image: ./assets/img/arXiv26_R2S.png
   - title: "The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors"
     authors: <strong>Shu Zhao</strong>, Tan Yu
