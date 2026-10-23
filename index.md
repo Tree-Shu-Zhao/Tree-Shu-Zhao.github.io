@@ -12,7 +12,7 @@ I am a Senior Machine Learning Engineer at NVIDIA. I completed my Ph.D. at Penns
 - **Vision & Language**
 
 ## News
-- **[Oct. 2026]** Our new paper, "Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation," is now on arXiv, and we have released [miles-agent](https://github.com/Tree-Shu-Zhao/miles-agent), an RL framework for researching long-horizon agents.
+- **[Oct. 2026]** Our new paper, "Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation," is now on arXiv, and we have released [miles-agent](https://github.com/Tree-Shu-Zhao/miles-agent), a post-training framework for researching long-horizon agents.
 - **[Sep. 2026]** Our paper, "The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors," was accepted at NeurIPS 26 as a **Spotlight**.
 - **[Jan. 2026]** Our paper, "MoRA: Missing Modality Low-Rank Adaptation for Visual Recognition," was accepted at ICLR 26.
 <details><summary> more... </summary>
