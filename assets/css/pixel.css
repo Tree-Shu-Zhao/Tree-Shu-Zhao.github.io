@@ -1,0 +1,792 @@
+/* shuzhao.me: pixel theme in cream / soft green.
+   The pixel look lives in the graphics (notched borders, hard shadows, sprites); all text uses
+   readable fonts. No blinking or looping animations. */
+
+:root {
+  --bg: #eef4e2;
+  --paper: #f9fbf3;
+  --ink: #1f2d1b;
+  --ink-2: #4a5a43;
+  --ink-3: #66765e;
+  --leaf-1: #e0edcb;
+  --leaf-2: #c8e0a8;
+  --leaf-3: #a5cb7c;
+  --leaf-4: #6f9f48;
+  --leaf-5: #3b692b;
+  --gold: #c9921a;
+  --gold-soft: #f4e5b2;
+
+  --f-text: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --wrap: 880px;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Components set their own display, which would otherwise override the hidden attribute. */
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--bg);
+  /* Faint dot grid, one 2x2 dot every 24px. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Crect width='2' height='2' fill='%23dde8cc'/%3E%3C/svg%3E");
+  color: var(--ink);
+  font: 400 15px/1.7 var(--f-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--leaf-5);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--leaf-3);
+}
+
+a:hover {
+  color: var(--ink);
+  background: var(--leaf-2);
+  text-decoration-color: var(--leaf-5);
+}
+
+:focus-visible {
+  outline: 2px dashed var(--leaf-5);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--leaf-3);
+  color: var(--ink);
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 10;
+  padding: 8px 12px;
+  background: var(--paper);
+}
+
+.ico {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: currentColor;
+  shape-rendering: crispEdges;
+}
+
+/* Notched-corner silhouettes for filled labels. */
+.badge,
+.award {
+  clip-path: polygon(0 2px, 2px 2px, 2px 0, calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px, 100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%, 2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
+}
+
+/* ---------- Hero ---------- */
+
+/* The photo frame spans the name block and the link row: the capitals of the name meet its top
+   edge and the buttons sit on its bottom edge. The bio runs full width underneath. */
+.hero {
+  display: grid;
+  grid-template-columns: 152px minmax(0, 1fr);
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "photo id"
+    "photo links"
+    "bio bio";
+  column-gap: 32px;
+  padding: 72px 0 0;
+}
+
+.avatar {
+  grid-area: photo;
+  align-self: start;
+  display: block;
+  width: 144px;
+  height: 144px;
+  margin: 4px;
+  object-fit: cover;
+  background: var(--leaf-1);
+  /* A 4px notched frame drawn in the margin, plus a hard offset shadow. */
+  box-shadow:
+    0 -4px 0 0 var(--ink),
+    0 4px 0 0 var(--ink),
+    -4px 0 0 0 var(--ink),
+    4px 0 0 0 var(--ink);
+  filter: drop-shadow(8px 8px 0 var(--leaf-3));
+}
+
+.id {
+  grid-area: id;
+  align-self: start;
+  min-width: 0;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font: 700 40px/1.15 var(--f-text);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-shadow: 3px 3px 0 var(--leaf-2);
+  /* Trim the line box to the capitals so the name starts exactly at the frame's top edge. */
+  text-box: trim-both cap alphabetic;
+}
+
+.role {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.role strong {
+  color: var(--ink);
+}
+
+.role .sep {
+  margin: 0 8px;
+  color: var(--leaf-3);
+}
+
+.links {
+  grid-area: links;
+  align-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Flex items so each row is exactly as tall as its buttons' outer edge. */
+.links li {
+  display: flex;
+}
+
+.links .btn {
+  padding: 8px 11px 7px;
+}
+
+.links .ico {
+  width: 16px;
+  height: 16px;
+}
+
+.bio {
+  grid-area: bio;
+  margin-top: 40px;
+}
+
+.bio p + p {
+  margin-top: 12px;
+}
+
+.bio strong {
+  background: linear-gradient(transparent 58%, var(--leaf-2) 58%);
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px;
+  padding: 8px 12px 7px;
+  border: 0;
+  font: 500 14px/1.1 var(--f-text);
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  /* 2px notched border plus an inner bevel on the bottom-right edge. */
+  box-shadow:
+    0 -2px 0 0 var(--ink),
+    0 2px 0 0 var(--ink),
+    -2px 0 0 0 var(--ink),
+    2px 0 0 0 var(--ink),
+    inset -4px -4px 0 0 var(--leaf-2);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--ink);
+  background: var(--leaf-1);
+}
+
+.btn:active {
+  transform: translate(0, 2px);
+  box-shadow:
+    0 -2px 0 0 var(--ink),
+    0 2px 0 0 var(--ink),
+    -2px 0 0 0 var(--ink),
+    2px 0 0 0 var(--ink),
+    inset 4px 4px 0 0 var(--leaf-2);
+}
+
+.btn-key {
+  background: var(--leaf-3);
+  box-shadow:
+    0 -2px 0 0 var(--ink),
+    0 2px 0 0 var(--ink),
+    -2px 0 0 0 var(--ink),
+    2px 0 0 0 var(--ink),
+    inset -4px -4px 0 0 var(--leaf-4);
+}
+
+.btn-key:hover {
+  background: var(--leaf-2);
+}
+
+.btn-sm {
+  gap: 6px;
+  padding: 6px 10px 5px;
+  font-size: 13px;
+  box-shadow:
+    0 -2px 0 0 var(--ink),
+    0 2px 0 0 var(--ink),
+    -2px 0 0 0 var(--ink),
+    2px 0 0 0 var(--ink),
+    inset -3px -3px 0 0 var(--leaf-2);
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  scroll-margin-top: 24px;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 72px 0 20px;
+  font: 600 18px/1.4 var(--f-text);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+h2::before {
+  content: "";
+  flex: none;
+  width: 12px;
+  height: 12px;
+  background: var(--leaf-4);
+  box-shadow: 4px 4px 0 0 var(--leaf-2);
+}
+
+h2::after {
+  content: "";
+  flex: 1;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, var(--leaf-3) 0 4px, transparent 4px 12px);
+}
+
+.note {
+  margin: -6px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+/* ---------- News ---------- */
+
+.news {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news li {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 16px;
+  padding: 6px 0;
+}
+
+.news time {
+  font: 500 14px/1.7 var(--f-text);
+  color: var(--leaf-5);
+}
+
+.more {
+  margin-top: 6px;
+}
+
+.more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px 4px 2px;
+  font: 500 14px/1.2 var(--f-text);
+  color: var(--leaf-5);
+  list-style: none;
+  cursor: pointer;
+}
+
+.more summary::-webkit-details-marker {
+  display: none;
+}
+
+.more summary:hover {
+  background: var(--leaf-2);
+  color: var(--ink);
+}
+
+.more summary .ico {
+  width: 14px;
+  height: 14px;
+}
+
+.more[open] summary .ico {
+  transform: rotate(90deg);
+}
+
+.more .news {
+  margin-top: 6px;
+}
+
+/* ---------- Research ---------- */
+
+.theme {
+  margin-top: 40px;
+}
+
+.theme h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font: 600 16px/1.4 var(--f-text);
+  color: var(--leaf-5);
+}
+
+.theme h3 .ico {
+  width: 14px;
+  height: 14px;
+  color: var(--leaf-4);
+}
+
+.theme-note {
+  margin: 4px 0 8px 22px;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.pub + .pub {
+  background: repeating-linear-gradient(90deg, var(--leaf-2) 0 4px, transparent 4px 8px) top left / 100% 2px no-repeat;
+}
+
+.venue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px 3px;
+  font: 600 13px/1.3 var(--f-text);
+  white-space: nowrap;
+  color: var(--ink);
+  background: var(--leaf-2);
+}
+
+.year {
+  padding-left: 2px;
+  font: 500 13px/1.3 var(--f-text);
+  color: var(--ink-3);
+}
+
+.award {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px 2px 6px;
+  font: 600 12.5px/1.4 var(--f-text);
+  color: #6b4a06;
+  background: var(--gold-soft);
+}
+
+.award .ico {
+  width: 12px;
+  height: 12px;
+  color: var(--gold);
+}
+
+.pub-body {
+  min-width: 0;
+}
+
+.pub h4 {
+  margin: 0;
+  font: 600 15px/1.5 var(--f-text);
+}
+
+.pub h4 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.pub h4 a:hover {
+  background: var(--leaf-2);
+}
+
+.authors {
+  margin-top: 4px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.authors b {
+  color: var(--ink);
+  background: linear-gradient(transparent 60%, var(--leaf-2) 60%);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* ---------- Open source ---------- */
+
+.repos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2px;
+  padding: 18px 18px 16px;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--paper);
+  box-shadow:
+    0 -2px 0 0 var(--ink),
+    0 2px 0 0 var(--ink),
+    -2px 0 0 0 var(--ink),
+    2px 0 0 0 var(--ink),
+    inset -4px -4px 0 0 var(--leaf-1);
+  transition: transform 0.12s steps(2, end);
+}
+
+.repo:hover {
+  color: var(--ink);
+  background: var(--paper);
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(6px 6px 0 var(--leaf-3));
+}
+
+.repo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 600 16px/1.4 var(--f-text);
+}
+
+.repo-name .ico {
+  color: var(--leaf-4);
+}
+
+.repo-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.repo-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 4px;
+  font: 500 13.5px/1.2 var(--f-text);
+  color: var(--leaf-5);
+}
+
+.repo-go .ico {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- Experience ---------- */
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.col-title {
+  margin: 0 0 12px;
+  font: 600 16px/1.3 var(--f-text);
+  color: var(--leaf-5);
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 28px;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  bottom: 18px;
+  width: 4px;
+  background: repeating-linear-gradient(var(--leaf-3) 0 4px, transparent 4px 8px);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 16px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--paper);
+  box-shadow:
+    0 -2px 0 0 var(--leaf-5),
+    0 2px 0 0 var(--leaf-5),
+    -2px 0 0 0 var(--leaf-5),
+    2px 0 0 0 var(--leaf-5);
+}
+
+.timeline li.current::before {
+  background: var(--leaf-4);
+}
+
+.when {
+  display: block;
+  font: 500 13.5px/1.5 var(--f-text);
+  color: var(--leaf-5);
+}
+
+.what {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.what b {
+  display: block;
+  color: var(--ink);
+}
+
+/* ---------- Footer ---------- */
+
+/* main also carries .wrap, whose padding shorthand would zero this out without the extra class. */
+main.wrap {
+  width: 100%;
+  padding-bottom: 96px;
+}
+
+.foot {
+  margin-top: auto;
+}
+
+.scene {
+  position: relative;
+  max-width: var(--wrap);
+  height: 64px;
+  margin: 0 auto;
+}
+
+.scene .tree {
+  position: absolute;
+  bottom: -4px;
+  shape-rendering: crispEdges;
+}
+
+.scene .t1 {
+  left: 24px;
+  width: 64px;
+  height: 64px;
+}
+
+.scene .t2 {
+  left: 92px;
+  width: 40px;
+  height: 40px;
+}
+
+.scene .t3 {
+  right: 24px;
+  width: 48px;
+  height: 48px;
+}
+
+.ground {
+  /* Grass blades on a darker band; a 16x8 tile drawn at 3x. */
+  padding-top: 24px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8' shape-rendering='crispEdges'%3E%3Cpath fill='%236f9f48' d='M3 1h1v1H3zM11 1h1v1h-1zM3 2h1v1H3zM7 2h1v1H7zM11 2h1v1h-1zM14 2h1v1h-1zM1 3h1v1H1zM3 3h2v1H3zM7 3h1v1H7zM10 3h2v1h-2zM14 3h1v1h-1zM1 4h4v1H1zM6 4h3v1H6zM10 4h3v1h-3zM14 4h2v1h-2zM0 5h16v1H0z'/%3E%3Cpath fill='%233b692b' d='M0 6h16v2H0z'/%3E%3C/svg%3E") repeat-x top left / 48px 24px,
+    var(--leaf-2);
+}
+
+.foot-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px 24px;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  font: 500 13.5px/1.4 var(--f-text);
+  color: var(--leaf-5);
+}
+
+/* ---------- Small screens ---------- */
+
+/* Below this width the buttons would wrap beside the photo, so they move under it. */
+@media (max-width: 820px) {
+  .hero {
+    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "photo id"
+      "links links"
+      "bio bio";
+    column-gap: 22px;
+    padding-top: 40px;
+  }
+
+  /* Top edges stay aligned: the photo frame meets the capitals of the name. */
+  .avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  h1 {
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+
+  .links {
+    margin-top: 28px;
+  }
+
+  .bio {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 14.5px;
+  }
+
+  h2 {
+    margin-top: 56px;
+    font-size: 16px;
+  }
+
+  .news li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .pub {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .venue {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .repos,
+  .cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .wrap {
+    padding: 0 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
