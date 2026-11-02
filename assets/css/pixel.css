@@ -331,12 +331,6 @@ h2::after {
   background: repeating-linear-gradient(90deg, var(--leaf-3) 0 4px, transparent 4px 12px);
 }
 
-.note {
-  margin: -6px 0 0;
-  font-size: 13.5px;
-  color: var(--ink-3);
-}
-
 /* ---------- News ---------- */
 
 .news {
@@ -396,7 +390,7 @@ h2::after {
 
 /* ---------- Research ---------- */
 
-.theme {
+.theme + .theme {
   margin-top: 40px;
 }
 
@@ -415,9 +409,13 @@ h2::after {
   color: var(--leaf-4);
 }
 
-.theme-note {
-  margin: 4px 0 8px 22px;
-  font-size: 13.5px;
+/* A quiet aside after a theme title. */
+.theme-tag {
+  position: relative;
+  /* Puts the 13px text on the 16px title's baseline. */
+  top: 1px;
+  margin-left: 8px;
+  font: 400 13px/1.4 var(--f-text);
   color: var(--ink-3);
 }
 
@@ -760,6 +758,17 @@ main.wrap {
   .pub {
     grid-template-columns: minmax(0, 1fr);
     gap: 10px;
+  }
+
+  /* The aside drops to its own line, under the title text. */
+  .theme h3:has(.theme-tag) {
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .theme-tag {
+    flex-basis: 100%;
+    margin-left: 22px;
   }
 
   .venue {
