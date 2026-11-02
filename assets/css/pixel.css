@@ -58,6 +58,8 @@ img {
 
 p {
   margin: 0;
+  /* Keep a lone word off the last line (Chrome, Edge, Safari 26+). */
+  text-wrap: pretty;
 }
 
 a {
